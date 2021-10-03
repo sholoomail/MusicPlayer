@@ -158,9 +158,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return
         else:
             mp.group_call.resume_playout()
-            if len(playlist)>=25:
-                tplaylist=playlist[:25]
-                pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+            if len(playlist)>=2500:
+                tplaylist=playlist[:2500]
+                pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
                 pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                     f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                     for i, x in enumerate(tplaylist)
@@ -192,9 +192,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return
         else:
             await mp.skip_current_playing()
-            if len(playlist)>=25:
-                tplaylist=playlist[:25]
-                pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+            if len(playlist)>=2500:
+                tplaylist=playlist[:2500]
+                pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
                 pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                     f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                     for i, x in enumerate(tplaylist)
