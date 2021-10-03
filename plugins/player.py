@@ -389,9 +389,9 @@ async def deezer(_, message):
                 await mp.start_radio()
                 pl = f"{emoji.NO_ENTRY} Empty playlist"
             else:
-                if len(playlist)>=25:
-                    tplaylist=playlist[:25]
-                    pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+                if len(playlist)>=2500:
+                    tplaylist=playlist[:2500]
+                    pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
                     pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                         f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                         for i, x in enumerate(tplaylist)
@@ -479,9 +479,9 @@ async def deezer(_, message):
         if not playlist:
             pl = f"{emoji.NO_ENTRY} Empty playlist"
         else:
-            if len(playlist)>=25:
-                tplaylist=playlist[:25]
-                pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+            if len(playlist)>=2500:
+                tplaylist=playlist[:2500]
+                pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
                 pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                     f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                     for i, x in enumerate(tplaylist)
@@ -513,9 +513,9 @@ async def player(_, m: Message):
         await mp.delete(m)
         return
     else:
-        if len(playlist)>=25:
-            tplaylist=playlist[:25]
-            pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+        if len(playlist)>=2500:
+            tplaylist=playlist[:2500]
+            pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
             pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                 f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                 for i, x in enumerate(tplaylist)
@@ -576,9 +576,9 @@ async def skip_track(_, m: Message):
         if not playlist:
             pl = f"{emoji.NO_ENTRY} Empty playlist"
         else:
-            if len(playlist)>=25:
-                tplaylist=playlist[:25]
-                pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+            if len(playlist)>=2500:
+                tplaylist=playlist[:2500]
+                pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
                 pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                     f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                     for i, x in enumerate(tplaylist)
@@ -615,9 +615,9 @@ async def skip_track(_, m: Message):
             if not playlist:
                 pl = f"{emoji.NO_ENTRY} Empty Playlist"
             else:
-                if len(playlist)>=25:
-                    tplaylist=playlist[:25]
-                    pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+                if len(playlist)>=2500:
+                    tplaylist=playlist[:2500]
+                    pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
                     pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                         f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                         for i, x in enumerate(tplaylist)
@@ -834,9 +834,9 @@ async def show_playlist(_, m: Message):
         await mp.delete(m)
         return
     else:
-        if len(playlist)>=25:
-            tplaylist=playlist[:25]
-            pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+        if len(playlist)>=2500:
+            tplaylist=playlist[:2500]
+            pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
             pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                 f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                 for i, x in enumerate(tplaylist)
@@ -978,9 +978,9 @@ async def yt_play_list(client, m: Message):
             k=await m.reply(f"Errors Occured while reading playlist: {e}")
             await mp.delete(k)
             return
-        if len(playlist)>=25:
-            tplaylist=playlist[:25]
-            pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+        if len(playlist)>=2500:
+            tplaylist=playlist[:2500]
+            pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
             pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                 f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                 for i, x in enumerate(tplaylist)
@@ -1109,9 +1109,9 @@ async def yt_play_list(client, m: Message):
                     k=await m.reply(f"Errors Occured while reading playlist: {e}")
                     await mp.delete(k)
                     return
-                if len(playlist)>=25:
-                    tplaylist=playlist[:25]
-                    pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+                if len(playlist)>=2500:
+                    tplaylist=playlist[:2500]
+                    pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
                     pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                         f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                         for i, x in enumerate(tplaylist)
@@ -1220,9 +1220,9 @@ async def import_play_list(client, m: Message):
             k=await m.reply(f"Errors Occured while reading playlist: {e}")
             await mp.delete(k)
             return
-        if len(playlist)>=25:
-            tplaylist=playlist[:25]
-            pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
+        if len(playlist)>=2500:
+            tplaylist=playlist[:2500]
+            pl=f"Listing first 2500 songs of total {len(playlist)} songs.\n"
             pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
                 f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                 for i, x in enumerate(tplaylist)
